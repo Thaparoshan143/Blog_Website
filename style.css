@@ -12,6 +12,7 @@ body{
     background-color:black;
     text-align:center;
     width:100vw;
+    z-index:0;
 }
 
 #Main-Nav-Container
@@ -70,4 +71,44 @@ body{
     border-radius:10px;
     color:black;
 }
+
+#Log-In-Pop-Up
+{
+    background-color:black;
+    /* opacity: 0; */
+    z-index:5;
+    position:absolute;
+    top:20vh;
+    left:20vw;
+    width:60vw;
+    height:60vh;
+    border:2px solid white;
+    border-radius:10px;
+}
+
+#Body-Container
+{
+    z-index: 1;
+    background-color: black;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+#Body-Container>div
+{
+    background-color: grey;
+    margin:1vh 1vw;
+    width: 50vw;
+    height: 80vh;
+}
+
+#Input-Field>form>input
+{
+    width:30%;
+    height: 5vh;
+    margin:2vh 0;
+}
+
+
 
