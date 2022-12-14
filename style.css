@@ -76,7 +76,7 @@ body{
 {
     background-color:black;
     /* opacity: 0; */
-    z-index:5;
+    z-index:-5;
     position:absolute;
     top:20vh;
     left:20vw;
@@ -101,13 +101,49 @@ body{
     margin:1vh 1vw;
     width: 50vw;
     height: 80vh;
+ 
 }
 
 #Input-Field>form>input
 {
-    width:30%;
+    width:20%;
     height: 5vh;
     margin:2vh 0;
+}
+
+#Body-Container>div>.Top-Block
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+#Body-Container>#Left-Container>.Top-Block>div
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:1vh 0;
+    width:30%;
+    padding:10vh 0;
+    background-color:red;
+}
+
+#Body-Container>#Right-Container>.Top-Block
+{
+    flex-direction: column;
+}
+
+#Body-Container>#Right-Container>.Top-Block>div
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:1vh 0;
+    width:100%;
+    padding:1vh 0;
+    background-color:blue;
+}
+
+#Body-Container>#Right-Container
+{
+    flex-direction: column;
 }
 
 
